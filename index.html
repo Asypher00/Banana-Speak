@@ -5,8 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Speak</title>
-</head>
-<body>
     
+</head>
+<style>
+    textarea  {display : block;
+        width : 500px;
+        height : 100px;
+        margin : 1rem;
+        padding : 1rem; 
+        }
+
+        #output-txt {
+            border : 2px solid black;
+            width : 500px;
+            height : 100px;
+            margin : 1rem;
+            padding : 1rem;
+        }
+</style>
+<body>
+    <h1>Welcome To Banana Speak</h1>
+    <h2>To translate your words into Minion language type in your text below</h2>
+    <img src="https://vignette.wikia.nocookie.net/poohadventures/images/6/60/Bob_minions_hands.jpg/revision/latest?cb=20150820000609" >
+    <textarea id="txt-input" placeholder="Type in english what you want translated"></textarea>
+    <br>
+    <button id="btn-translate">Translate</button>
+
+    <div style="padding : 1rem;">Output will be shown below :- </div>
+    <div id="output-txt">output</div>
+
+    <script src="translation-app.js" type="text/javascript"></script>
 </body>
 </html>
